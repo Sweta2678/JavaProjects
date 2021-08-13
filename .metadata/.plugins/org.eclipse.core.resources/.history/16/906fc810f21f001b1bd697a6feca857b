@@ -1,0 +1,60 @@
+package com.pmdbcoach.hibernate.skuintegration;
+
+import javax.persistence.*;
+
+
+
+@Entity
+@Table(name = "COLORMASTER")
+public class Color {
+	@Id 
+	@Column(name = "uniqueid")
+	private String uniqueid  ;
+	private String fgcolorcode;                   
+	private String colorfamily ;                  
+	private String shortcolorname ;               
+	private String colorname   ;        
+	           
+	private String colortype ;                    
+	
+	
+	public String getFgcolorcode() {
+		return fgcolorcode;
+	}
+	public void setFgcolorcode(String fgcolorcode) {
+		this.fgcolorcode = fgcolorcode;
+	}
+	public String getColorfamily() {
+		return colorfamily;
+	}
+	public void setColorfamily(String colorfamily) {
+		this.colorfamily = colorfamily;
+	}
+	public String getShortcolorname() {
+		return shortcolorname;
+	}
+	public void setShortcolorname(String shortcolorname) {
+		this.shortcolorname = shortcolorname;
+	}
+	public String getColorname() {
+		return colorname;
+	}
+	public void setColorname(String colorname) {
+		this.colorname = colorname;
+	}
+	public String getColortype() {
+		return colortype;
+	}
+	public void setColortype(String colortype) {
+		this.colortype = colortype;
+	}
+	
+	public String getUniqueid() {
+		return uniqueid;
+	}
+	public void setUniqueid(String uniqueid) {
+		this.uniqueid = uniqueid;
+	}
+	
+	
+}

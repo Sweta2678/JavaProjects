@@ -1,0 +1,11 @@
+package com.sweta.aopdemo.aspect;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.context.annotation.ComponentScan;
+
+@Aspect
+@ComponentScan
+public class MyDemoLoginAspect {
+
+	
+}

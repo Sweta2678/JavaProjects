@@ -1,0 +1,48 @@
+
+Sep 24, 2020 17:46:53.281 NEW SESSION
+Sep 24, 2020 17:46:53.281 
+Sep 24, 2020 17:46:53.282 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Sep 24, 2020 17:46:53.282 
+Sep 24, 2020 19:25:24.188 
+Sep 24, 2020 19:25:24.190 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Sep 24, 2020 19:25:24.192 
+Sep 24, 2020 19:25:24.266 
+Sep 24, 2020 19:25:24.268 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Sep 24, 2020 19:25:24.269 
+
+Sep 25, 2020 19:06:46.95 NEW SESSION
+Sep 25, 2020 19:06:46.96 
+Sep 25, 2020 19:06:46.114 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Sep 25, 2020 19:06:46.128 
+
+Oct 07, 2020 12:28:08.438 NEW SESSION
+Oct 07, 2020 12:28:08.438 [Parent 8736, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+Oct 07, 2020 12:34:15.101 
+Oct 07, 2020 12:34:15.102 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Oct 07, 2020 12:34:15.102 
+Oct 07, 2020 12:34:15.105 
+Oct 07, 2020 12:34:15.106 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Oct 07, 2020 12:34:15.106 
+Oct 07, 2020 12:34:15.149 
+Oct 07, 2020 12:34:15.150 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+Oct 07, 2020 12:34:15.150 
+
+Oct 19, 2020 14:43:59.269 NEW SESSION
+Oct 19, 2020 14:43:59.269 [Parent 24404, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+
+Mar 03, 2021 12:03:56.475 NEW SESSION
+Mar 03, 2021 12:03:56.476 [GFX1-]: shader-cache: Timed out before finishing loads
+Mar 03, 2021 12:03:56.533 [ERROR webrender_bindings::program_cache] shader-cache: Timed out before finishing loads
+
+Mar 19, 2021 24:25:27.209 NEW SESSION
+Mar 19, 2021 24:25:27.210 [GFX1-]: shader-cache: Timed out before finishing loads
+Mar 19, 2021 24:25:27.241 [ERROR webrender_bindings::program_cache] shader-cache: Timed out before finishing loads
+Mar 19, 2021 13:52:52.300 [Parent 7636, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+
+Mar 24, 2021 17:44:41.938 NEW SESSION
+Mar 24, 2021 17:44:42.95 
+Mar 24, 2021 17:44:42.335 ###!!! [Child][MessageChannel] Error: (msgtype=0x230033,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2021 17:44:42.357 
+Mar 24, 2021 17:44:42.358 
+Mar 24, 2021 17:44:42.359 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Mar 24, 2021 17:44:42.361 

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://service.addressbook.sample" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://service.addressbook.sample" xmlns:intf="http://service.addressbook.sample" xmlns:tns1="http://entry.addressbook.sample" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://service.addressbook.sample" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://entry.addressbook.sample"/>
+   <element name="addEntry">
+    <complexType>
+     <sequence>
+      <element name="entry" type="tns1:Entry"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="addEntryResponse">
+    <complexType/>
+   </element>
+   <element name="findEntry">
+    <complexType>
+     <sequence>
+      <element name="name" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="findEntryResponse">
+    <complexType>
+     <sequence>
+      <element name="findEntryReturn" type="tns1:Entry"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+  <schema elementFormDefault="qualified" targetNamespace="http://entry.addressbook.sample" xmlns="http://www.w3.org/2001/XMLSchema">
+   <complexType name="Entry">
+    <sequence>
+     <element name="city" nillable="true" type="xsd:string"/>
+     <element name="name" nillable="true" type="xsd:string"/>
+     <element name="postalCode" nillable="true" type="xsd:string"/>
+     <element name="state" nillable="true" type="xsd:string"/>
+     <element name="street" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="addEntryResponse">
+
+      <wsdl:part element="impl:addEntryResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findEntryRequest">
+
+      <wsdl:part element="impl:findEntry" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="findEntryResponse">
+
+      <wsdl:part element="impl:findEntryResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="addEntryRequest">
+
+      <wsdl:part element="impl:addEntry" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="AddressBookService">
+
+      <wsdl:operation name="addEntry">
+
+         <wsdl:input message="impl:addEntryRequest" name="addEntryRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:addEntryResponse" name="addEntryResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findEntry">
+
+         <wsdl:input message="impl:findEntryRequest" name="findEntryRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:findEntryResponse" name="findEntryResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="AddressBookServiceSoapBinding" type="impl:AddressBookService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="addEntry">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="addEntryRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="addEntryResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="findEntry">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="findEntryRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="findEntryResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="AddressBookServiceService">
+
+      <wsdl:port binding="impl:AddressBookServiceSoapBinding" name="AddressBookService">
+
+         <wsdlsoap:address location="http://localhost:8080/Pojo3/services/AddressBookService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,10 @@
+package com.pmdb.coach.inbound.product.thumbnail;
+
+public class IBProductThumbnailService {
+	public IBProductThumbnailResponse procesInboundProductThumbnail (IBProductThumbnailRequest productRequest){
+		IBProductThumbnailImpl serviceImpl = new IBProductThumbnailImpl();
+		
+		return serviceImpl.procesInboundProductThumbnail(productRequest);
+	}
+
+}

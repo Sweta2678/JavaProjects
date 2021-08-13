@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.springbootlearning.demo.AnnotationDemoApp.java&apos; to &apos;JavaConfigDemoApp.java&apos;&#x0D;&#x0A;- Original project: &apos;spring-annotation-without-xml&apos;&#x0D;&#x0A;- Original element: &apos;com.springbootlearning.demo.AnnotationDemoApp.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.springbootlearning.demo.JavaConfigDemoApp.java&apos;" description="Rename compilation unit &apos;AnnotationDemoApp.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.springbootlearning.demo{AnnotationDemoApp.java" name="JavaConfigDemoApp.java" references="false" stamp="1599930320826" version="1.0"/>
+</session>

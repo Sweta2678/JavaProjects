@@ -1,0 +1,33 @@
+package com.clone;
+
+import java.util.Scanner;
+
+public class HackerDemo {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+        System.out.println("================================");
+        for(int i=0;i<3;i++){
+            String s1=sc.next();
+            int x=sc.nextInt();
+            System.out.println("%03d",x);            
+
+//            int size = String.valueOf(x).length();
+//            if(size < 3) {
+//            	if(size==2) {
+//                	System.out.println("0"+size);
+//            	}
+//            	if(size==1) {
+//                	System.out.println("00"+size);
+//            	}
+//            	if(size==0) {
+//                	System.out.println("000");
+//            	}
+//            }
+        }
+        System.out.println("================================");
+
+	    }
+
+
+}

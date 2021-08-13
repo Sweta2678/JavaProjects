@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//src/sample/addressbook/entry/Entry.java=UTF-8
+encoding//src/sample/addressbook/service/AddressBookService.java=UTF-8
+encoding//src/sample/addressbook/service/AddressBookServiceService.java=UTF-8
+encoding//src/sample/addressbook/service/AddressBookServiceServiceLocator.java=UTF-8
+encoding//src/sample/addressbook/service/AddressBookServiceSoapBindingStub.java=UTF-8

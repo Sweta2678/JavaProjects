@@ -1,0 +1,7 @@
+1614627467491	Delete element
+1614717912804	Move 2 resources to 'WEB-INF'
+1614768902998	Move 'css' to 'resources'
+1614770091259	Rename package 'com.springmvc.controller'
+1614770159507	Rename package 'com.springmvc.dao'
+1614770227491	Rename package 'com.springmvc.entity'
+1614772109529	Move 'index.jsp' to 'WebContent'

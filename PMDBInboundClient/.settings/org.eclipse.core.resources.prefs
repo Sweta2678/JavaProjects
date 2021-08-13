@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//src/com/pmdb/coach/inbound/color/Color.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorRequest.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorResponse.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorService.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorServiceService.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorServiceServiceLocator.java=UTF-8
+encoding//src/com/pmdb/coach/inbound/color/ColorServiceSoapBindingStub.java=UTF-8

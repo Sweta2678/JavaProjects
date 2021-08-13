@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;PMDBInbound&apos;" deleteContents="true" description="Delete resource &apos;PMDBInbound&apos;" element1="/PMDBInbound" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1603098084686"/>
+</session>

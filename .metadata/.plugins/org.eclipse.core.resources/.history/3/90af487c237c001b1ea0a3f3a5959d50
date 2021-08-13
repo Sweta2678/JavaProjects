@@ -1,0 +1,40 @@
+package com.spring.springmvc.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.spring.springmvc.entity.Customer;
+import com.spring.springmvc.service.CustomerService;
+
+@Controller
+@RequestMapping("/customer")
+public class CustomerController {
+
+	@Autowired
+	CustomerService customerService;
+	
+	@GetMapping("/list")
+	public String listCustomer(Model model) {
+		
+		//get customer from dao
+		List<Customer> customers = customerService.getCustomer();
+		
+		//set it to model
+		model.addAttribute("customers",customers);
+		
+		return "list-customers";
+	}
+	
+	@GetMapping("/showFormForAdd")
+	public String addCustomer(Model model) {
+		Customer customer = new Customer();
+		
+		
+		return "customer-form";
+	}
+}

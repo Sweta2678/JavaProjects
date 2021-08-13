@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Use this file to deploy some handlers/chains and services      --><!-- Two ways to do this:                                           --><!--   java org.apache.axis.client.AdminClient deploy.wsdd          --><!--      after the axis server is running                          --><!-- or                                                             --><!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   --><!--      from the same directory that the Axis engine runs         --><deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from AddressBookServiceService WSDL service -->
+
+  <service name="AddressBookService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.addressbook.sample"/>
+      <parameter name="wsdlServiceElement" value="AddressBookServiceService"/>
+      <parameter name="schemaQualified" value="http://service.addressbook.sample,http://entry.addressbook.sample"/>
+      <parameter name="wsdlServicePort" value="AddressBookService"/>
+      <parameter name="className" value="sample.addressbook.service.AddressBookService"/>
+      <parameter name="wsdlPortType" value="AddressBookService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation xmlns:operNS="http://service.addressbook.sample" name="addEntry" qname="operNS:addEntry" soapAction="">
+        <parameter xmlns:pns="http://service.addressbook.sample" xmlns:tns="http://entry.addressbook.sample" qname="pns:entry" type="tns:Entry"/>
+      </operation>
+      <operation xmlns:operNS="http://service.addressbook.sample" xmlns:retNS="http://service.addressbook.sample" xmlns:rtns="http://entry.addressbook.sample" name="findEntry" qname="operNS:findEntry" returnQName="retNS:findEntryReturn" returnType="rtns:Entry" soapAction="">
+        <parameter xmlns:pns="http://service.addressbook.sample" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:name" type="tns:string"/>
+      </operation>
+      <parameter name="allowedMethods" value="addEntry findEntry"/>
+
+      <typeMapping xmlns:ns="http://entry.addressbook.sample" qname="ns:Entry" type="java:sample.addressbook.entry.Entry" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+  </service>
+</deployment>

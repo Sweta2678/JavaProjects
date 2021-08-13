@@ -1,0 +1,25 @@
+package com.clone;
+
+import java.util.Scanner;
+
+public class HackerDemo {
+
+	public static void main(String[] args) {
+		  Scanner scan = new Scanner(System.in);
+	       
+	        String s = scan.next();
+	        Double d = scan.nextDouble();
+	        int i = scan.nextInt();
+
+	        System.out.println("String: " + s);
+	        System.out.println("Double: " + d);
+	        System.out.println("Int: " + i);
+	        
+	        
+	        StringBuffer sb = new StringBuffer();
+	        sb.append(i);
+
+	    }
+
+
+}

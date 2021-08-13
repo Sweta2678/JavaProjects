@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 3 elements from project &apos;pmdb-inbound&apos;&#x0D;&#x0A;- Original project: &apos;pmdb-inbound&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IBProductSKUService.java.mine&#x0D;&#x0A;     IBProductSKUService.java.r31&#x0D;&#x0A;     IBProductSKUService.java.r34" description="Delete elements" element1="src/main/java/com/coach/pmdb/ib/api/service/IBProductSKUService.java.mine" element2="src/main/java/com/coach/pmdb/ib/api/service/IBProductSKUService.java.r31" element3="src/main/java/com/coach/pmdb/ib/api/service/IBProductSKUService.java.r34" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="3" stamp="1604401114035" subPackages="false" version="1.0"/>
+</session>

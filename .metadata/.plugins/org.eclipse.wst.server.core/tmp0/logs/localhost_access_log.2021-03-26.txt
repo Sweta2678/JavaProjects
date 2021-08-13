@@ -1,0 +1,4 @@
+127.0.0.1 - - [26/Mar/2021:12:29:07 +0530] "GET / HTTP/1.1" 404 751
+127.0.0.1 - - [26/Mar/2021:12:29:27 +0530] "GET /WebCustomerTracker/ HTTP/1.1" 302 -
+127.0.0.1 - - [26/Mar/2021:12:29:40 +0530] "GET /WebCustomerTracker/customer/list HTTP/1.1" 200 3290
+127.0.0.1 - - [26/Mar/2021:12:29:41 +0530] "GET /WebCustomerTracker/resources/css/style.css HTTP/1.1" 200 1049
